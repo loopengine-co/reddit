@@ -1,0 +1,33 @@
+# Searching and reading change nothing, so they're allowed. Commenting
+# and posting put words on Reddit, in public, under the account's name,
+# where a reply that reads like an ad can get the account banned from a
+# subreddit, so both ask a person first, who sees the exact text.
+- name: reddit-search-allowed
+  scope: "*/*"
+  tool: reddit_search
+  decision: allow
+
+- name: reddit-list-posts-allowed
+  scope: "*/*"
+  tool: reddit_list_posts
+  decision: allow
+
+- name: reddit-get-post-allowed
+  scope: "*/*"
+  tool: reddit_get_post
+  decision: allow
+
+- name: reddit-get-subreddit-allowed
+  scope: "*/*"
+  tool: reddit_get_subreddit
+  decision: allow
+
+- name: reddit-comment-needs-approval
+  scope: "*/*"
+  tool: reddit_comment
+  decision: ask
+
+- name: reddit-create-post-needs-approval
+  scope: "*/*"
+  tool: reddit_create_post
+  decision: ask

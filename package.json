@@ -1,0 +1,32 @@
+{
+  "name": "@loopengine-co/reddit",
+  "version": "1.0.0",
+  "description": "A loopengine ability: Reddit tools to search posts, list a subreddit, read a post with its comments and a subreddit's rules, and comment and post (both ask first by default), plus a skill on finding conversations worth joining and replying without spamming.",
+  "license": "MIT",
+  "keywords": [
+    "loopengine",
+    "loopengine-ability",
+    "reddit",
+    "social-media",
+    "community"
+  ],
+  "files": [
+    "loopengine.ability.json",
+    "tools",
+    "skills",
+    "actauth",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://loopengine.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopengine-co/reddit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loopengine-co/reddit/issues"
+  }
+}

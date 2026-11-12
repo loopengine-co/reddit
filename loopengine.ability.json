@@ -1,0 +1,20 @@
+{
+  "loopengineVersion": ">=0.1.62 <1.0.0",
+  "tools": [
+    "tools/reddit_search.ts",
+    "tools/reddit_list_posts.ts",
+    "tools/reddit_get_post.ts",
+    "tools/reddit_get_subreddit.ts",
+    "tools/reddit_comment.ts",
+    "tools/reddit_create_post.ts"
+  ],
+  "skills": ["skills/reddit-replies"],
+  "actauth": "actauth/rules.yml",
+  "env": [
+    { "name": "REDDIT_CLIENT_ID", "description": "Your Reddit app's client id: the string under the app's name at reddit.com/prefs/apps. Enough on its own (with the secret) to search and read Reddit. See this ability's README.", "secret": true, "scope": "overridable" },
+    { "name": "REDDIT_CLIENT_SECRET", "description": "The same app's secret, from reddit.com/prefs/apps.", "secret": true, "scope": "overridable" },
+    { "name": "REDDIT_REFRESH_TOKEN", "description": "Optional, to comment and post: a refresh token for the Reddit account to post as, made for this app with the identity, read, submit and permanent duration. Or set REDDIT_USERNAME and REDDIT_PASSWORD instead.", "secret": true, "scope": "overridable" },
+    { "name": "REDDIT_USERNAME", "description": "Optional, to comment and post with a \"script\" app: the Reddit account's username (no u/). Used with REDDIT_PASSWORD when there's no refresh token.", "secret": false, "scope": "overridable" },
+    { "name": "REDDIT_PASSWORD", "description": "Optional: that account's password. Accounts with two-factor sign-in need a refresh token instead.", "secret": true, "scope": "overridable" }
+  ]
+}
